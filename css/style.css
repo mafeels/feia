@@ -2,12 +2,17 @@
 Theme Name:
 Author: yaminncco
 
-Colors:
-	Body 		  : #868F9B
-	Headers 	: #e7e7e8 
-	Primary 	: #5B2120
-	Dark      : #FCFCFF
-	Grey 		  : #F4F4F4 #FAFAFA #EEE
+Colors
+    Body          : #868F9B
+    Background:  #262425 #868F9B
+    Headers     : #e7e7e8 
+    Primary     : #5B2120
+    Dark      : #FCFCFF ; 
+    Grey          : #F4F4F4 #FAFAFA #EEE
+
+
+
+
 
 Fonts: Montserrat Varela Round
 
@@ -44,21 +49,26 @@ Table OF Contents
 
 /* -- typography -- */
 
+@font-face {
+  font-family: Haptik;
+  src: url(gt-haptik-regular-webfont.ttf);
+}
+
 body {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     overflow-x: hidden;
-    color: #868F9B;
-    background-color: #242223;
+    color: #262425;
+    background-color:  #f0f0f0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Haptik, sans-serif;
     font-weight: 700;
     margin-top: 0px;
     margin-bottom: 20px;
-    color: #e7e7e8 ;
+    color: #262425 ;
 }
 
 h1 {
@@ -70,7 +80,7 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 28px;
 }
 
 h4 {
@@ -628,8 +638,8 @@ header {
 .about {
     position: relative;
     text-align: center;
-    padding: 40px 20px;
-    border: 1px solid #444;
+    padding: 40px 50px;
+    border: 2px solid #5B2120;
     margin: 15px 0px;
 }
 
@@ -637,6 +647,12 @@ header {
     font-size: 36px;
     color: #5B2120;
     margin-bottom: 20px;
+}
+
+.espaco {
+    padding-bottom: 50px;
+
+    margin: 0px;
 }
 
 
@@ -792,9 +808,13 @@ header {
 
 .service {
     position: relative;
-    padding: 20px 20px 20px 35px;
-    margin: 0px 0px;
-    border: 0px solid #EEE;
+    /*padding: 20px 20px 20px 35px;*/
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin: 0px;
+    border: 0px solid #000;
+    text-align: center;
+
 }
 
 .service i {
@@ -807,8 +827,10 @@ header {
 }
 
 .service:after {
+    border-radius: 10px;
     content: "";
-    background-color: #1C1D21;
+    background-color: #5B2120;
+    opacity: 0.2;
     position: absolute;
     left: 0;
     top: 0;
@@ -1492,8 +1514,8 @@ header {
 .footer-copyright p {
     text-align: center;
     font-size: 14px;
-    text-transform: uppercase;
     margin: 0;
+    color: #fff;
 }
 
 
